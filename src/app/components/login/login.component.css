@@ -1,0 +1,48 @@
+/* Apply full-height gradient background */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc, #00c6ff);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper to center content */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Login Box Styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency effect */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input Fields */
+.form-control {
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: #6a11cb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #2575fc;
+}
