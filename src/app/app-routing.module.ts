@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { FacultyDashboardComponent } from './components/faculty-dashboard/faculty-dashboard.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
+import { AllUsersComponent } from './components/all-users/all-users.component';
 
 const routes: Routes = [
   {
@@ -15,12 +17,21 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path:'admin-dashboard',
-    component:AdminDashboardComponent
+    path: 'admin-dashboard',
+    component: AdminDashboardComponent
   },
   {
-    path:'faculty-dashboard',
-    component:FacultyDashboardComponent
+    path: 'faculty-dashboard',
+    component: FacultyDashboardComponent
+  },
+  {
+    path: 'add-user',
+    component: AddUserComponent
+  },
+  {
+    path: 'all-user',
+    component: AllUsersComponent
+
   }
 ];
 

@@ -1,0 +1,57 @@
+/* Navbar Background with Gradient */
+.custom-navbar {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  padding: 10px 20px;
+}
+
+/* Navbar Text & Links */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* Gold color on hover */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  margin-left: 20px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #ff4d4d;
+}
+
+/* Responsive Navbar */
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* White color for toggle icon */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .logout-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}

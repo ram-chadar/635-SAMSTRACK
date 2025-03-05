@@ -1,1 +1,35 @@
-<p>admin-menu works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Admin Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar" aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="adminNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" routerLink="/add-user">Add User</a></li>
+          <li class="nav-item"><a class="nav-link" routerLink="/all-user">All Users</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Add Subject</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">All Subjects</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#">View All Attendance</a></li>
+        </ul>
+        <!-- Logout Button -->
+        <button class="btn btn-danger logout-btn" type="button">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+</body>
+</html>

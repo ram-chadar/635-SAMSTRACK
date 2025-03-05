@@ -1,0 +1,43 @@
+/* Apply Gradient Background */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard Wrapper */
+.dashboard-wrapper {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Heading Styling */
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.dashboard-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Full-Width Image Styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

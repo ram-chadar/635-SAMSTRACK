@@ -1,1 +1,51 @@
-<p>all-users works!</p>
+<app-admin-menu></app-admin-menu>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<div class="container mt-4">
+  <h2 class="text-center page-title">All Users</h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>USERNAME</th>
+          <th>PASSWORD</th>
+          <th>FIRST NAME</th>
+          <th>LAST NAME</th>
+          <th>EMAIL</th>
+          <th>ROLE</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let user of userList">
+          <td>{{ user.username }}</td>
+          <td>{{ user.password }}</td>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.role }}</td>
+          <td>
+
+            <button (click)="deleteUser(user.username)" class="btn btn-danger">Delete</button>
+            <button class="btn btn-success">Edit</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

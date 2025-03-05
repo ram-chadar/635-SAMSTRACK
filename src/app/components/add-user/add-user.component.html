@@ -1,1 +1,77 @@
-<p>add-user works!</p>
+<app-admin-menu></app-admin-menu>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="add-user-wrapper">
+    <div class="container">
+      <h2 class="form-title text-center">Add New User</h2>
+
+      <form>
+        <div class="row">
+          <!-- Left Section -->
+          <div class="col-md-6">
+            <!-- Username -->
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" [(ngModel)]="user.username">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="user.password">
+            </div>
+
+            <!-- First Name -->
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name" name="firstName" [(ngModel)]="user.firstName">
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="col-md-6">
+            <!-- Last Name -->
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name" name="lastName" [(ngModel)]="user.lastName">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="user.email">
+            </div>
+
+            <!-- Role Dropdown -->
+            <div class="mb-3">
+              <label for="role" class="form-label">Role</label>
+              <select class="form-select" id="role" name="role" [(ngModel)]="user.role">
+                <option value="">Select Role</option>
+                <option value="admin">Admin</option>
+                <option value="faculty">Faculty</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button (Full Width) -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button type="submit" (click)="addUser()" class="btn btn-primary w-100">Add User</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Gradient Background */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Form Wrapper */
+.add-user-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form Container */
+.container {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-control,
+.form-select {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background: #e68900;
+}

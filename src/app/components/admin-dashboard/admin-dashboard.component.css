@@ -1,0 +1,46 @@
+/* Full-page gradient background */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #4a90e2); /* Smooth blue gradient */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper to center content */
+.dashboard-wrapper {
+  width: 100%;
+  padding: 50px 15px;
+}
+
+/* Heading Styling */
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.dashboard-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Image Container */
+.image-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
